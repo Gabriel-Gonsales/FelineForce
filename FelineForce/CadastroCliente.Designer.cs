@@ -29,167 +29,202 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroCliente));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtCPF = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtTelefone = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnSalvar = new System.Windows.Forms.Button();
-            this.btnVoltar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
+            label2 = new Label();
+            txtNome = new TextBox();
+            txtEmail = new TextBox();
+            label3 = new Label();
+            txtTelefone = new TextBox();
+            label4 = new Label();
+            btnSalvar = new Button();
+            btnVoltar = new Button();
+            txtEndereco = new TextBox();
+            label5 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(110, 89);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(14, 14);
+            pictureBox1.Margin = new Padding(4, 3, 4, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(128, 103);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(62)))), ((int)(((byte)(77)))));
-            this.label1.Location = new System.Drawing.Point(128, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(425, 52);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Cadastro do Cliente";
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial Black", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.FromArgb(200, 62, 77);
+            label1.Location = new Point(149, 32);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(425, 52);
+            label1.TabIndex = 8;
+            label1.Text = "Cadastro do Cliente";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(62)))), ((int)(((byte)(77)))));
-            this.label2.Location = new System.Drawing.Point(331, 172);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 38);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Nome";
+            label2.AutoSize = true;
+            label2.Font = new Font("Arial Black", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.FromArgb(200, 62, 77);
+            label2.Location = new Point(103, 198);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(102, 38);
+            label2.TabIndex = 9;
+            label2.Text = "Nome";
             // 
             // txtNome
             // 
-            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(62)))), ((int)(((byte)(77)))));
-            this.txtNome.Location = new System.Drawing.Point(338, 213);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.ShortcutsEnabled = false;
-            this.txtNome.Size = new System.Drawing.Size(319, 40);
-            this.txtNome.TabIndex = 10;
-            this.txtNome.WordWrap = false;
-            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
+            txtNome.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtNome.ForeColor = Color.FromArgb(200, 62, 77);
+            txtNome.Location = new Point(111, 246);
+            txtNome.Margin = new Padding(4, 3, 4, 3);
+            txtNome.Name = "txtNome";
+            txtNome.ShortcutsEnabled = false;
+            txtNome.Size = new Size(372, 40);
+            txtNome.TabIndex = 10;
+            txtNome.WordWrap = false;
+            txtNome.TextChanged += txtNome_TextChanged_1;
             // 
-            // txtCPF
+            // txtEmail
             // 
-            this.txtCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCPF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(62)))), ((int)(((byte)(77)))));
-            this.txtCPF.Location = new System.Drawing.Point(338, 309);
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.ShortcutsEnabled = false;
-            this.txtCPF.Size = new System.Drawing.Size(319, 40);
-            this.txtCPF.TabIndex = 12;
-            this.txtCPF.WordWrap = false;
-            this.txtCPF.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            txtEmail.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtEmail.ForeColor = Color.FromArgb(200, 62, 77);
+            txtEmail.Location = new Point(111, 357);
+            txtEmail.Margin = new Padding(4, 3, 4, 3);
+            txtEmail.Name = "txtEmail";
+            txtEmail.ShortcutsEnabled = false;
+            txtEmail.Size = new Size(372, 40);
+            txtEmail.TabIndex = 12;
+            txtEmail.WordWrap = false;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(62)))), ((int)(((byte)(77)))));
-            this.label3.Location = new System.Drawing.Point(331, 268);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 38);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "CPF";
+            label3.AutoSize = true;
+            label3.Font = new Font("Arial Black", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.FromArgb(200, 62, 77);
+            label3.Location = new Point(103, 309);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(100, 38);
+            label3.TabIndex = 11;
+            label3.Text = "Email";
             // 
             // txtTelefone
             // 
-            this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(62)))), ((int)(((byte)(77)))));
-            this.txtTelefone.Location = new System.Drawing.Point(338, 403);
-            this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.ShortcutsEnabled = false;
-            this.txtTelefone.Size = new System.Drawing.Size(319, 40);
-            this.txtTelefone.TabIndex = 14;
-            this.txtTelefone.WordWrap = false;
-            this.txtTelefone.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            txtTelefone.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtTelefone.ForeColor = Color.FromArgb(200, 62, 77);
+            txtTelefone.Location = new Point(666, 246);
+            txtTelefone.Margin = new Padding(4, 3, 4, 3);
+            txtTelefone.Name = "txtTelefone";
+            txtTelefone.ShortcutsEnabled = false;
+            txtTelefone.Size = new Size(372, 40);
+            txtTelefone.TabIndex = 14;
+            txtTelefone.WordWrap = false;
+            txtTelefone.TextChanged += txtTelefone_TextChanged;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(62)))), ((int)(((byte)(77)))));
-            this.label4.Location = new System.Drawing.Point(331, 362);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(145, 38);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Telefone";
+            label4.AutoSize = true;
+            label4.Font = new Font("Arial Black", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.FromArgb(200, 62, 77);
+            label4.Location = new Point(658, 198);
+            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(145, 38);
+            label4.TabIndex = 13;
+            label4.Text = "Telefone";
             // 
             // btnSalvar
             // 
-            this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(62)))), ((int)(((byte)(77)))));
-            this.btnSalvar.FlatAppearance.BorderSize = 0;
-            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.ForeColor = System.Drawing.Color.White;
-            this.btnSalvar.Location = new System.Drawing.Point(641, 556);
-            this.btnSalvar.Margin = new System.Windows.Forms.Padding(0);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(103, 38);
-            this.btnSalvar.TabIndex = 15;
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = false;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            btnSalvar.BackColor = Color.FromArgb(200, 62, 77);
+            btnSalvar.FlatAppearance.BorderSize = 0;
+            btnSalvar.FlatStyle = FlatStyle.Flat;
+            btnSalvar.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSalvar.ForeColor = Color.White;
+            btnSalvar.Location = new Point(748, 642);
+            btnSalvar.Margin = new Padding(0);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(120, 44);
+            btnSalvar.TabIndex = 15;
+            btnSalvar.Text = "Salvar";
+            btnSalvar.UseVisualStyleBackColor = false;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // btnVoltar
             // 
-            this.btnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(62)))), ((int)(((byte)(77)))));
-            this.btnVoltar.FlatAppearance.BorderSize = 0;
-            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(819, 556);
-            this.btnVoltar.Margin = new System.Windows.Forms.Padding(0);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(103, 38);
-            this.btnVoltar.TabIndex = 16;
-            this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = false;
-            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            btnVoltar.BackColor = Color.FromArgb(200, 62, 77);
+            btnVoltar.FlatAppearance.BorderSize = 0;
+            btnVoltar.FlatStyle = FlatStyle.Flat;
+            btnVoltar.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnVoltar.ForeColor = Color.White;
+            btnVoltar.Location = new Point(955, 642);
+            btnVoltar.Margin = new Padding(0);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(120, 44);
+            btnVoltar.TabIndex = 16;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
+            // 
+            // txtEndereco
+            // 
+            txtEndereco.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtEndereco.ForeColor = Color.FromArgb(200, 62, 77);
+            txtEndereco.Location = new Point(666, 357);
+            txtEndereco.Margin = new Padding(4, 3, 4, 3);
+            txtEndereco.Name = "txtEndereco";
+            txtEndereco.ShortcutsEnabled = false;
+            txtEndereco.Size = new Size(372, 40);
+            txtEndereco.TabIndex = 18;
+            txtEndereco.WordWrap = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Arial Black", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.FromArgb(200, 62, 77);
+            label5.Location = new Point(658, 309);
+            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(157, 38);
+            label5.TabIndex = 17;
+            label5.Text = "Endereço";
             // 
             // frmCadastroCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(154)))), ((int)(((byte)(87)))));
-            this.ClientSize = new System.Drawing.Size(1001, 625);
-            this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.txtTelefone);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtCPF);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1017, 664);
-            this.MinimumSize = new System.Drawing.Size(1017, 664);
-            this.Name = "frmCadastroCliente";
-            this.Text = "Cadastro de Cliente";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmCadastroCliente_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(223, 154, 87);
+            ClientSize = new Size(1168, 721);
+            Controls.Add(txtEndereco);
+            Controls.Add(label5);
+            Controls.Add(btnVoltar);
+            Controls.Add(btnSalvar);
+            Controls.Add(txtTelefone);
+            Controls.Add(label4);
+            Controls.Add(txtEmail);
+            Controls.Add(label3);
+            Controls.Add(txtNome);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(pictureBox1);
+            Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            MaximumSize = new Size(1184, 760);
+            MinimumSize = new Size(1184, 760);
+            Name = "frmCadastroCliente";
+            Text = "Cadastro de Cliente";
+            FormClosed += frmCadastroCliente_FormClosed;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -198,11 +233,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtCPF;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.TextBox txtEndereco;
+        private System.Windows.Forms.Label label5;
     }
 }

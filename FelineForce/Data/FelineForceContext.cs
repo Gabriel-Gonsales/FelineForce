@@ -18,7 +18,19 @@ public class FelineForceContext : DbContext
     public FelineForceContext(DbContextOptions<FelineForceContext> options)
         : base(options)
     { }
+    // Outras DbSets...
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+        // Configurações específicas (se necessário)
+        modelBuilder.Entity<LogSistema>(entity =>
+        {
+            entity.Property(e => e.Mensagem).IsRequired();
+            entity.Property(e => e.Tipo).IsRequired();
+        });
+    }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)

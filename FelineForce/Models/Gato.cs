@@ -12,7 +12,7 @@ namespace FelineForce.Models
         public string Nome { get; set; }
         public string Cor { get; set; }
         public Guid TutorId { get; set; }
-        public Usuario Tutor { get; set; }
+        public Cliente Tutor { get; set; }
         public IEnumerable<Atendimento> Atendimentos { get; set; }
     }
 }

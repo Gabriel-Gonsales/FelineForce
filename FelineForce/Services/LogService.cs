@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 
 namespace FelineForce.Services
 {
-    public class LogService
+    public class LogService : ILogService
     {
-        public readonly IGenericRepository<LogSistema> _logRepository;
-        public LogService(IGenericRepository<LogSistema> logRepository)
+        public readonly ILogRepository _logRepository;
+        public LogService(ILogRepository logRepository)
         {
             _logRepository = logRepository;
         }
@@ -25,6 +25,10 @@ namespace FelineForce.Services
             };
 
             await _logRepository.AddAsync(usuario);
+        }
+        public async Task<IEnumerable<LogSistema>> BuscarTodosLogs()
+        {
+            return await _logRepository.ObterTodosLogs();
         }
     }
 }

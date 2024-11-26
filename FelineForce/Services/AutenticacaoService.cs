@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FelineForce.Services
 {
-    public class AutenticacaoService
+    public class AutenticacaoService : IAutenticacaoService
     {
         private readonly FelineForceContext _context;
 

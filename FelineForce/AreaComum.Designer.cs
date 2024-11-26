@@ -37,6 +37,7 @@
             this.btnVeterinario = new System.Windows.Forms.Button();
             this.btnAvaliacao = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
+            this.btnGatos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +58,7 @@
             this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClientes.ForeColor = System.Drawing.Color.White;
-            this.btnClientes.Location = new System.Drawing.Point(141, 176);
+            this.btnClientes.Location = new System.Drawing.Point(158, 180);
             this.btnClientes.Margin = new System.Windows.Forms.Padding(0);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(191, 159);
@@ -73,13 +74,14 @@
             this.btnBanho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBanho.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBanho.ForeColor = System.Drawing.Color.White;
-            this.btnBanho.Location = new System.Drawing.Point(388, 176);
+            this.btnBanho.Location = new System.Drawing.Point(405, 180);
             this.btnBanho.Margin = new System.Windows.Forms.Padding(0);
             this.btnBanho.Name = "btnBanho";
             this.btnBanho.Size = new System.Drawing.Size(191, 159);
             this.btnBanho.TabIndex = 8;
             this.btnBanho.Text = "Agendamento de Banho";
             this.btnBanho.UseVisualStyleBackColor = false;
+            this.btnBanho.Click += new System.EventHandler(this.btnBanho_Click);
             // 
             // btnVenda
             // 
@@ -88,13 +90,14 @@
             this.btnVenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVenda.ForeColor = System.Drawing.Color.White;
-            this.btnVenda.Location = new System.Drawing.Point(635, 176);
+            this.btnVenda.Location = new System.Drawing.Point(652, 180);
             this.btnVenda.Margin = new System.Windows.Forms.Padding(0);
             this.btnVenda.Name = "btnVenda";
             this.btnVenda.Size = new System.Drawing.Size(191, 159);
             this.btnVenda.TabIndex = 9;
             this.btnVenda.Text = "Venda";
             this.btnVenda.UseVisualStyleBackColor = false;
+            this.btnVenda.Click += new System.EventHandler(this.btnVenda_Click);
             // 
             // btnEstoque
             // 
@@ -103,13 +106,14 @@
             this.btnEstoque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEstoque.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstoque.ForeColor = System.Drawing.Color.White;
-            this.btnEstoque.Location = new System.Drawing.Point(635, 356);
+            this.btnEstoque.Location = new System.Drawing.Point(652, 360);
             this.btnEstoque.Margin = new System.Windows.Forms.Padding(0);
             this.btnEstoque.Name = "btnEstoque";
             this.btnEstoque.Size = new System.Drawing.Size(191, 159);
             this.btnEstoque.TabIndex = 12;
             this.btnEstoque.Text = "Estoque";
             this.btnEstoque.UseVisualStyleBackColor = false;
+            this.btnEstoque.Click += new System.EventHandler(this.btnEstoque_Click);
             // 
             // btnVeterinario
             // 
@@ -118,13 +122,14 @@
             this.btnVeterinario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVeterinario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVeterinario.ForeColor = System.Drawing.Color.White;
-            this.btnVeterinario.Location = new System.Drawing.Point(388, 356);
+            this.btnVeterinario.Location = new System.Drawing.Point(405, 360);
             this.btnVeterinario.Margin = new System.Windows.Forms.Padding(0);
             this.btnVeterinario.Name = "btnVeterinario";
             this.btnVeterinario.Size = new System.Drawing.Size(191, 159);
             this.btnVeterinario.TabIndex = 11;
             this.btnVeterinario.Text = "Agendamento de Veterinário";
             this.btnVeterinario.UseVisualStyleBackColor = false;
+            this.btnVeterinario.Click += new System.EventHandler(this.btnVeterinario_Click);
             // 
             // btnAvaliacao
             // 
@@ -133,13 +138,15 @@
             this.btnAvaliacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAvaliacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAvaliacao.ForeColor = System.Drawing.Color.White;
-            this.btnAvaliacao.Location = new System.Drawing.Point(141, 356);
+            this.btnAvaliacao.Location = new System.Drawing.Point(36, 457);
             this.btnAvaliacao.Margin = new System.Windows.Forms.Padding(0);
             this.btnAvaliacao.Name = "btnAvaliacao";
             this.btnAvaliacao.Size = new System.Drawing.Size(191, 159);
             this.btnAvaliacao.TabIndex = 10;
             this.btnAvaliacao.Text = "Avaliação do Cliente";
             this.btnAvaliacao.UseVisualStyleBackColor = false;
+            this.btnAvaliacao.Visible = false;
+            this.btnAvaliacao.Click += new System.EventHandler(this.btnAvaliacao_Click);
             // 
             // btnSair
             // 
@@ -157,12 +164,29 @@
             this.btnSair.UseVisualStyleBackColor = false;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
+            // btnGatos
+            // 
+            this.btnGatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(62)))), ((int)(((byte)(77)))));
+            this.btnGatos.FlatAppearance.BorderSize = 0;
+            this.btnGatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGatos.ForeColor = System.Drawing.Color.White;
+            this.btnGatos.Location = new System.Drawing.Point(158, 360);
+            this.btnGatos.Margin = new System.Windows.Forms.Padding(0);
+            this.btnGatos.Name = "btnGatos";
+            this.btnGatos.Size = new System.Drawing.Size(191, 159);
+            this.btnGatos.TabIndex = 14;
+            this.btnGatos.Text = "Gatos";
+            this.btnGatos.UseVisualStyleBackColor = false;
+            this.btnGatos.Click += new System.EventHandler(this.btnGatos_Click);
+            // 
             // frmAreaComum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(154)))), ((int)(((byte)(87)))));
             this.ClientSize = new System.Drawing.Size(1001, 625);
+            this.Controls.Add(this.btnGatos);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnEstoque);
             this.Controls.Add(this.btnVeterinario);
@@ -193,5 +217,6 @@
         private System.Windows.Forms.Button btnVeterinario;
         private System.Windows.Forms.Button btnAvaliacao;
         private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button btnGatos;
     }
 }

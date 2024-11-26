@@ -8,6 +8,8 @@ namespace FelineForce.Models
 {
     public class Venda : Common
     {
+        public decimal TotalCompra { get; set; }
+        public string? CPFCliente { get; set; }
         public IEnumerable<ItemVenda> Itens { get;set; }
     }
 }

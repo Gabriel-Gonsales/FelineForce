@@ -1,13 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="Agendamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AreaAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="AreaComum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Avaliacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CadastraAgendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CadastraGato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CadastraUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="CadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="CadastroEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Estoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Gatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Relatorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Venda.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

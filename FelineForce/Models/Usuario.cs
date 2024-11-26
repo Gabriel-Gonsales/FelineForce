@@ -3,7 +3,9 @@
     public class Usuario : Common
     {
         public string Nome { get; set; }  
-        public string Email { get; set; }
+        public string? Email { get; set; }
+        public decimal Salario { get; set; }
+        public int HorasTrabalhadas { get; set; }
         public string Senha { get; set; }  
         public TipoUsuario Tipo { get; set; }  
         public bool Bloqueado { get; set; }

@@ -11,11 +11,16 @@ namespace FelineForce.Models
     {
         public TipoAtendimento Tipo { get; set; }
         public DateTime DataAtendimento { get; set; }
+        public string? Descricao { get; set; }
+        public Gato Gato { get; set; }
+        public Usuario? Atendente { get; set; }
+        public Cliente Tutor { get; set; }  
         public enum TipoAtendimento
         {
             Banho = 0,
             Tosa = 1,
-            Vacina = 2 
+            BanhoTosa = 2,
+            Vacina = 3
         }
     }
 }

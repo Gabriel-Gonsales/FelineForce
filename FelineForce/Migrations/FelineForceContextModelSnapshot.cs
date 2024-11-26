@@ -30,16 +30,19 @@ namespace FelineForce.Migrations
                     b.Property<DateTime>("Alteracao")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<Guid?>("ClienteId")
+                    b.Property<Guid?>("AtendenteId")
                         .HasColumnType("char(36)");
 
                     b.Property<DateTime>("DataAtendimento")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<string>("Descricao")
+                        .HasColumnType("longtext");
+
                     b.Property<bool>("Excluido")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<Guid?>("GatoId")
+                    b.Property<Guid>("GatoId")
                         .HasColumnType("char(36)");
 
                     b.Property<DateTime>("Inclusao")
@@ -48,16 +51,16 @@ namespace FelineForce.Migrations
                     b.Property<int>("Tipo")
                         .HasColumnType("int");
 
-                    b.Property<Guid?>("UsuarioId")
+                    b.Property<Guid>("TutorId")
                         .HasColumnType("char(36)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ClienteId");
+                    b.HasIndex("AtendenteId");
 
                     b.HasIndex("GatoId");
 
-                    b.HasIndex("UsuarioId");
+                    b.HasIndex("TutorId");
 
                     b.ToTable("Atendimentos");
                 });
@@ -88,12 +91,13 @@ namespace FelineForce.Migrations
                     b.Property<DateTime>("Alteracao")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<string>("CPF")
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Endereco")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<bool>("Excluido")
@@ -103,11 +107,9 @@ namespace FelineForce.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("Nome")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Telefone")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
@@ -144,9 +146,6 @@ namespace FelineForce.Migrations
                     b.Property<DateTime>("Alteracao")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<Guid?>("ClienteId")
-                        .HasColumnType("char(36)");
-
                     b.Property<string>("Cor")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -165,8 +164,6 @@ namespace FelineForce.Migrations
                         .HasColumnType("char(36)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ClienteId");
 
                     b.HasIndex("TutorId");
 
@@ -188,14 +185,26 @@ namespace FelineForce.Migrations
                     b.Property<bool>("Excluido")
                         .HasColumnType("tinyint(1)");
 
+                    b.Property<string>("Fornecedor")
+                        .HasColumnType("longtext");
+
                     b.Property<DateTime>("Inclusao")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Nome")
+                        .HasColumnType("longtext");
+
+                    b.Property<float>("Preco")
+                        .HasColumnType("float");
 
                     b.Property<Guid?>("ProdutoId")
                         .HasColumnType("char(36)");
 
                     b.Property<int>("Quantidade")
                         .HasColumnType("int");
+
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(65,30)");
 
                     b.HasKey("Id");
 
@@ -221,11 +230,17 @@ namespace FelineForce.Migrations
                     b.Property<DateTime>("Inclusao")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<string>("Nome")
+                        .HasColumnType("longtext");
+
                     b.Property<Guid?>("ProdutoId")
                         .HasColumnType("char(36)");
 
                     b.Property<int>("Quantidade")
                         .HasColumnType("int");
+
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(65,30)");
 
                     b.Property<Guid?>("VendaId")
                         .HasColumnType("char(36)");
@@ -313,8 +328,14 @@ namespace FelineForce.Migrations
                     b.Property<bool>("Bloqueado")
                         .HasColumnType("tinyint(1)");
 
+                    b.Property<string>("Email")
+                        .HasColumnType("longtext");
+
                     b.Property<bool>("Excluido")
                         .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("HorasTrabalhadas")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("Inclusao")
                         .HasColumnType("datetime(6)");
@@ -322,6 +343,9 @@ namespace FelineForce.Migrations
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<decimal>("Salario")
+                        .HasColumnType("decimal(65,30)");
 
                     b.Property<string>("Senha")
                         .IsRequired()
@@ -344,6 +368,9 @@ namespace FelineForce.Migrations
                     b.Property<DateTime>("Alteracao")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<string>("CPFCliente")
+                        .HasColumnType("longtext");
+
                     b.Property<Guid?>("ClienteId")
                         .HasColumnType("char(36)");
 
@@ -352,6 +379,9 @@ namespace FelineForce.Migrations
 
                     b.Property<DateTime>("Inclusao")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<decimal>("TotalCompra")
+                        .HasColumnType("decimal(65,30)");
 
                     b.Property<Guid?>("UsuarioId")
                         .HasColumnType("char(36)");
@@ -367,27 +397,33 @@ namespace FelineForce.Migrations
 
             modelBuilder.Entity("FelineForce.Models.Atendimento", b =>
                 {
-                    b.HasOne("FelineForce.Models.Cliente", null)
+                    b.HasOne("FelineForce.Models.Usuario", "Atendente")
                         .WithMany("Atendimentos")
-                        .HasForeignKey("ClienteId");
+                        .HasForeignKey("AtendenteId");
 
-                    b.HasOne("FelineForce.Models.Gato", null)
+                    b.HasOne("FelineForce.Models.Gato", "Gato")
                         .WithMany("Atendimentos")
-                        .HasForeignKey("GatoId");
+                        .HasForeignKey("GatoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("FelineForce.Models.Usuario", null)
+                    b.HasOne("FelineForce.Models.Cliente", "Tutor")
                         .WithMany("Atendimentos")
-                        .HasForeignKey("UsuarioId");
+                        .HasForeignKey("TutorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Atendente");
+
+                    b.Navigation("Gato");
+
+                    b.Navigation("Tutor");
                 });
 
             modelBuilder.Entity("FelineForce.Models.Gato", b =>
                 {
-                    b.HasOne("FelineForce.Models.Cliente", null)
+                    b.HasOne("FelineForce.Models.Cliente", "Tutor")
                         .WithMany("Gatos")
-                        .HasForeignKey("ClienteId");
-
-                    b.HasOne("FelineForce.Models.Usuario", "Tutor")
-                        .WithMany()
                         .HasForeignKey("TutorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -419,9 +455,11 @@ namespace FelineForce.Migrations
 
             modelBuilder.Entity("FelineForce.Models.LogSistema", b =>
                 {
-                    b.HasOne("FelineForce.Models.Usuario", null)
+                    b.HasOne("FelineForce.Models.Usuario", "Usuario")
                         .WithMany("Logs")
                         .HasForeignKey("UsuarioId");
+
+                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("FelineForce.Models.Venda", b =>

@@ -10,6 +10,7 @@ namespace FelineForce.Models
     {
         public TipoLog Tipo { set;get; }
         public string Mensagem { get; set; }
+        public Usuario? Usuario { get; set; }
         public enum TipoLog
         {
             Cadastro = 0,

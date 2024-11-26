@@ -1,9 +1,9 @@
 ﻿using FelineForce.Models;
 using FelineForce.Repository.Interfaces;
 
-namespace ERP_com_relatorio.Services
+namespace FelineForce.Services
 {
-    public class UsuarioService
+    public class UsuarioService : IUsuarioService
     {
         private readonly IUsuarioRepository _usuarioRepository;
 
@@ -12,13 +12,15 @@ namespace ERP_com_relatorio.Services
             _usuarioRepository = usuarioRepository;
         }
 
-        public async Task CriarUsuario(string nome, string senha, Usuario.TipoUsuario tipo)
+        public async Task CriarUsuario(string nome, decimal salario, int horas, string senha, Usuario.TipoUsuario tipo)
         {
             var usuario = new Usuario
             {
                 Nome = nome,
                 Senha = senha,
                 Tipo = tipo,
+                HorasTrabalhadas = horas,
+                Salario = salario,
                 Bloqueado = false,
                 Excluido = false
             };
