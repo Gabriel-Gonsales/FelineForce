@@ -1,6 +1,6 @@
-# Sistema de Gerenciamento de Gatos - Projeto com .NET 8 e MySQL
+# Sistema de Gerenciamento de petshop para gatos - Projeto com .NET 8 e MySQL
 
-Este projeto é um sistema completo de gerenciamento de gatos, oferecendo funcionalidades para agendamento, controle de estoque, vendas, pagamento, e muito mais. Foi desenvolvido utilizando **.NET Core 8**, **Windows Forms**, e **MySQL** como banco de dados.
+Este projeto é um sistema completo de gerenciamento de petshop para gatos, oferecendo funcionalidades para agendamento, controle de estoque, vendas, pagamento, e muito mais. Foi desenvolvido utilizando **.NET Core 8**, **Windows Forms**, e **MySQL** como banco de dados.
 
 ---
 
@@ -8,7 +8,7 @@ Este projeto é um sistema completo de gerenciamento de gatos, oferecendo funcio
 
 ### Área Comum:
 - **Agendamento**: Controle de consultas e visitas.
-- **Cadastro de Agendamento**: Registre novos horários e clientes.
+- **Cadastro de Agendamento (banho, tosa e veterinario)**: Registre novos horários e clientes.
 - **Gestão de Gatos**: Cadastre e visualize informações dos gatos.
 - **Vendas e Pagamentos**: Processamento de compras e pagamentos.
 - **Controle de Estoque**: Gerencie produtos em estoque.
@@ -78,7 +78,7 @@ Este projeto é um sistema completo de gerenciamento de gatos, oferecendo funcio
 ## 🚀 Observações Finais
 
 - **Dificuldades Enfrentadas**: Apesar de .NET ser uma plataforma amigável, a lógica de Windows Forms era desconhecida inicialmente. Também houve desafios na criação do banco de dados e na implementação das migrations.
-- **Lições Aprendidas**: Este projeto foi uma oportunidade para adquirir conhecimentos práticos em .NET, MySQL, e arquitetura de software bem estruturada.
+- **Lições Aprendidas**: Este projeto foi uma oportunidade para adquirir conhecimentos práticos em .NET, MySQL, e arquitetura de software bem estruturada. Além disso, foi importante para entendermos sistemas de informação que oferecem suporte à auditoria.
 
 ---
 
