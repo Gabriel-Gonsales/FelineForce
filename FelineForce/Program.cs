@@ -48,6 +48,7 @@ namespace FelineForce
                 .AddScoped<IGatoService, GatoService>()
                 .AddScoped<IAutenticacaoService, AutenticacaoService>()
                 .AddScoped<ILogRepository, LogRepository>()
+                .AddScoped<IAtendimentoRepository, AtendimentoRepository>()
                 .AddScoped<IGatoRepository, GatoRepository>()
                 .AddScoped<IUsuarioRepository, UsuarioRepository>()
                 .AddScoped<IUsuarioService, UsuarioService>()

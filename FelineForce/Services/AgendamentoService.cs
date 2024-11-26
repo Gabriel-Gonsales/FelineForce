@@ -8,10 +8,10 @@ namespace FelineForce.Services
 {
     public class AgendamentoService : IAgendamentoService
     {
-        private readonly IGenericRepository<Atendimento> _atendimentoRepository;
+        private readonly IAtendimentoRepository _atendimentoRepository;
         private readonly IGatoRepository _gatoRepository;
 
-        public AgendamentoService(IGenericRepository<Atendimento> atendimentoRepository, IGatoRepository gatoRepository)
+        public AgendamentoService(IAtendimentoRepository atendimentoRepository, IGatoRepository gatoRepository)
         {
             _atendimentoRepository = atendimentoRepository;
             _gatoRepository = gatoRepository;
@@ -61,17 +61,7 @@ namespace FelineForce.Services
         }
         public async Task<IEnumerable<Atendimento>> BuscarAtendimentosAsync(int pesquisa)
         {
-            if (pesquisa == null)
-            {
-                // Retorna todos os atendimentos caso a pesquisa esteja vazia
-                return await _atendimentoRepository.GetAllAsync();
-            }
-
-            // Cria a expressão de pesquisa
-            Expression<Func<Atendimento, bool>> predicate = atendimento =>
-                (int)atendimento.Tipo == pesquisa;
-            // Retorna os atendimentos filtrados conforme a expressão
-            return await _atendimentoRepository.GetAllAsync(predicate);
+            return await _atendimentoRepository.BuscarAtendimentosPorTipoAsync(pesquisa);
         }
     }
 }

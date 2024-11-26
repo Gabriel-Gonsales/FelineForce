@@ -1,4 +1,5 @@
-﻿using FelineForce.Models;
+﻿using FelineForce.Migrations;
+using FelineForce.Models;
 using FelineForce.Services;
 using FelineForce.Services.Interfaces;
 using System.Data;
@@ -24,6 +25,7 @@ namespace ERP_com_relatorio
 
         private void frmRelatorios_Load(object sender, EventArgs e)
         {
+            grdRelatorios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dteInicio.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
             dteFim.Value = DateTime.Now;
             cmbFiltro.Items.Clear();
@@ -185,7 +187,7 @@ namespace ERP_com_relatorio
         {
 
         }
-
+        //comentario teste
         private async void btnGerar_Click(object sender, EventArgs e)
         {
             try

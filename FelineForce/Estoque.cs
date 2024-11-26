@@ -1,4 +1,5 @@
-﻿using FelineForce.Services;
+﻿using FelineForce.Migrations;
+using FelineForce.Services;
 using FelineForce.Services.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,7 @@ namespace ERP_com_relatorio
 
         private async void frmEstoque_Load(object sender, EventArgs e)
         {
+            grdClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             var produtos = await _estoqueService.BuscarProdutosAsync(txtPesquisa.Text);
             // Limpa as colunas existentes
             grdClientes.Columns.Clear();

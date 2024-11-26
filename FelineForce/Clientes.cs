@@ -1,4 +1,5 @@
-﻿using FelineForce.Models;
+﻿using FelineForce.Migrations;
+using FelineForce.Models;
 using FelineForce.Services.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -40,6 +41,7 @@ namespace ERP_com_relatorio
 
         private async void Clientes_Load(object sender, EventArgs e)
         {
+            grdClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             var clientes = await _clienteService.BuscarClientesAsync(txtPesquisa.Text);
             // Limpa as colunas existentes
             grdClientes.Columns.Clear();

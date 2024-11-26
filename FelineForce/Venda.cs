@@ -1,4 +1,5 @@
-﻿using FelineForce.Models;
+﻿using FelineForce.Migrations;
+using FelineForce.Models;
 using FelineForce.Services;
 using FelineForce.Services.Interfaces;
 using System;
@@ -35,6 +36,7 @@ namespace ERP_com_relatorio
 
         private void frmVenda_Load(object sender, EventArgs e)
         {
+            grdAgendamentos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             grdAgendamentos.Columns.Clear();
             grdAgendamentos.Columns.Add("Id", "Id");
             grdAgendamentos.Columns.Add("Item", "Item");
