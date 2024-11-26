@@ -26,7 +26,7 @@ jobs:
       # Configurar o MySQL para testes
       - name: Start MySQL Service
         run: |
-          choco install mysql --params "/port:3306 /password:testpassword"
+          choco install mysql --params "/port:3306 /password:gabu43"
           mysql --version
 
       # Restaurar dependências
