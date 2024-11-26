@@ -64,9 +64,10 @@ namespace ERP_com_relatorio
                 var usuario = await _usuarioService.ObterUsuarioPorId(Guid.Parse(id));
                 if (usuario != null)
                 {
+                    var salarioFormatado = Math.Round(usuario.Salario, 2);
                     txtNome.Text = usuario.Nome;
                     txtHoras.Text = usuario.HorasTrabalhadas.ToString();
-                    txtSalario.Text = usuario.Salario.ToString();
+                    txtSalario.Text = salarioFormatado.ToString();
                     selecioneTipo.SelectedItem = usuario.Tipo;
                 }
                 else

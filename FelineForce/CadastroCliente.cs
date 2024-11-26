@@ -21,7 +21,7 @@ namespace ERP_com_relatorio
         private readonly IClienteService _clienteService;
         private Guid? ClienteId;
         private Form form;
-        public frmCadastroCliente(Form Form, IClienteService clienteService, Guid? Id, string Nome = null, string Email = null, string Telefone = null, string Endereco = null)
+        public frmCadastroCliente(Form Form, IClienteService clienteService, Guid? Id, string Nome = null, string CPF = null, string Telefone = null, string Endereco = null)
         {
             InitializeComponent();
             form = Form;
@@ -30,7 +30,7 @@ namespace ERP_com_relatorio
             {
                 ClienteId = Id;
                 txtNome.Text = Nome;
-                txtEmail.Text = Email;
+                txtEmail.Text = CPF;
                 txtTelefone.Text = Telefone;
                 txtEndereco.Text = Endereco;
             }
@@ -74,7 +74,7 @@ namespace ERP_com_relatorio
 
                     // Atualiza os campos
                     clienteExistente.Nome = nome;
-                    clienteExistente.Email = email;
+                    clienteExistente.CPF = email;
                     clienteExistente.Telefone = telefone;
                     clienteExistente.Endereco = endereco;
 
@@ -117,6 +117,11 @@ namespace ERP_com_relatorio
         }
 
         private void txtNome_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
         {
 
         }

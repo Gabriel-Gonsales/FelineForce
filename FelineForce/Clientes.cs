@@ -49,7 +49,6 @@ namespace ERP_com_relatorio
             // Adiciona as colunas manualmente (caso queira personalizar)
             grdClientes.Columns.Add("Id", "Id");
             grdClientes.Columns.Add("Nome", "Nome");
-            grdClientes.Columns.Add("Email", "Email");
             grdClientes.Columns.Add("CPF", "CPF");
             grdClientes.Columns.Add("Telefone", "Telefone");
             grdClientes.Columns.Add("Endereco", "Endereco");
@@ -57,7 +56,7 @@ namespace ERP_com_relatorio
             // Preenche o DataGridView com os dados de clientes
             foreach (var cliente in clientes)
             {
-                grdClientes.Rows.Add(cliente.Id, cliente.Nome, cliente.Email, cliente.CPF, cliente.Telefone, cliente.Endereco);
+                grdClientes.Rows.Add(cliente.Id, cliente.Nome, cliente.CPF, cliente.Telefone, cliente.Endereco);
             }
         }
 
@@ -85,7 +84,6 @@ namespace ERP_com_relatorio
 
             grdClientes.Columns.Add("Id", "Id");
             grdClientes.Columns.Add("Nome", "Nome");
-            grdClientes.Columns.Add("Email", "Email");
             grdClientes.Columns.Add("CPF", "CPF");
             grdClientes.Columns.Add("Telefone", "Telefone");
             grdClientes.Columns.Add("Endereco", "Endereco");
@@ -93,7 +91,7 @@ namespace ERP_com_relatorio
             // Preenche o DataGridView com os dados de clientes
             foreach (var cliente in clientes)
             {
-                grdClientes.Rows.Add(cliente.Id, cliente.Nome,cliente.Email, cliente.CPF, cliente.Telefone, cliente.Endereco);
+                grdClientes.Rows.Add(cliente.Id, cliente.Nome,cliente.CPF, cliente.Telefone, cliente.Endereco);
             }
         }
 
@@ -111,14 +109,13 @@ namespace ERP_com_relatorio
 
                 grdClientes.Columns.Add("Id", "Id");
                 grdClientes.Columns.Add("Nome", "Nome");
-                grdClientes.Columns.Add("Email", "Email");
                 grdClientes.Columns.Add("CPF", "CPF");
                 grdClientes.Columns.Add("Telefone", "Telefone");
                 grdClientes.Columns.Add("Endereco", "Endereco");
                 // Preenche o DataGridView com os dados de clientes
                 foreach (var cliente in clientes)
                 {
-                    grdClientes.Rows.Add(cliente.Id, cliente.Nome, cliente.Email, cliente.CPF, cliente.Telefone, cliente.Endereco);
+                    grdClientes.Rows.Add(cliente.Id, cliente.Nome, cliente.CPF, cliente.Telefone, cliente.Endereco);
                 }
             }
         }
@@ -150,7 +147,6 @@ namespace ERP_com_relatorio
             // Adiciona as colunas manualmente (caso queira personalizar)
             grdClientes.Columns.Add("Id", "Id"); // Adiciona a coluna para o GUID
             grdClientes.Columns.Add("Nome", "Nome");
-            grdClientes.Columns.Add("Email", "Email");
             grdClientes.Columns.Add("CPF", "CPF");
             grdClientes.Columns.Add("Telefone", "Telefone");
             grdClientes.Columns.Add("Endereco", "Endereco");
@@ -158,7 +154,7 @@ namespace ERP_com_relatorio
             // Preenche o DataGridView com os dados de clientes
             foreach (var cliente in clientes)
             {
-                grdClientes.Rows.Add(cliente.Id, cliente.Nome, cliente.Email, cliente.CPF, cliente.Telefone, cliente.Endereco);
+                grdClientes.Rows.Add(cliente.Id, cliente.Nome, cliente.CPF, cliente.Telefone, cliente.Endereco);
             }
         }
 
@@ -221,7 +217,7 @@ namespace ERP_com_relatorio
             // Obtém o ID do cliente da célula correspondente
             var clienteIdCell = selectedRow.Cells["Id"];
             var nome = selectedRow.Cells["Nome"].Value.ToString() ?? "";
-            var email = selectedRow.Cells["Email"].Value.ToString() ?? "";
+            var email = selectedRow.Cells["CPF"].Value.ToString() ?? "";
             var telefone = selectedRow.Cells["Telefone"].Value.ToString() ?? "";
             var endereco = selectedRow.Cells["Endereco"].Value.ToString() ?? "";
             if (clienteIdCell == null || clienteIdCell.Value == null)

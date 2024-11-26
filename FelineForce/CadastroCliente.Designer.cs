@@ -103,6 +103,7 @@
             txtEmail.Size = new Size(372, 40);
             txtEmail.TabIndex = 12;
             txtEmail.WordWrap = false;
+            txtEmail.TextChanged += txtEmail_TextChanged;
             // 
             // label3
             // 
@@ -112,9 +113,9 @@
             label3.Location = new Point(103, 309);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(100, 38);
+            label3.Size = new Size(76, 38);
             label3.TabIndex = 11;
-            label3.Text = "Email";
+            label3.Text = "CPF";
             // 
             // txtTelefone
             // 
