@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|d:\\unesp\\implementa\u00E7\u00E3o sistemas\\erp-relatorio2\\felineforce\\felineforce\\relatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|solutionrelative:felineforce\\relatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\felineforce\\relatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|solutionrelative:felineforce\\relatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|d:\\unesp\\implementa\u00E7\u00E3o sistemas\\erp-relatorio2\\felineforce\\felineforce\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|solutionrelative:felineforce\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|d:\\unesp\\implementa\u00E7\u00E3o sistemas\\erp-relatorio2\\felineforce\\felineforce\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\felineforce\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|solutionrelative:felineforce\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -19,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|solutionrelative:felineforce\\cadastrausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|d:\\unesp\\implementa\u00E7\u00E3o sistemas\\erp-relatorio2\\felineforce\\felineforce\\cadastrausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\felineforce\\cadastrausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|solutionrelative:felineforce\\cadastrausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -29,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|d:\\unesp\\implementa\u00E7\u00E3o sistemas\\erp-relatorio2\\felineforce\\felineforce\\models\\itemcompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|solutionrelative:felineforce\\models\\itemcompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|d:\\unesp\\implementa\u00E7\u00E3o sistemas\\erp-relatorio2\\felineforce\\felineforce\\relatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|solutionrelative:felineforce\\relatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|d:\\unesp\\implementa\u00E7\u00E3o sistemas\\erp-relatorio2\\felineforce\\felineforce\\services\\interfaces\\iestoqueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,7 +55,7 @@
       "RelativeMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|solutionrelative:felineforce\\models\\itemvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|d:\\unesp\\implementa\u00E7\u00E3o sistemas\\erp-relatorio2\\felineforce\\felineforce\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\felineforce\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|solutionrelative:felineforce\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -65,10 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|d:\\unesp\\implementa\u00E7\u00E3o sistemas\\erp-relatorio2\\felineforce\\felineforce\\models\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|solutionrelative:felineforce\\models\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|d:\\unesp\\implementa\u00E7\u00E3o sistemas\\erp-relatorio2\\felineforce\\felineforce\\relatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|solutionrelative:felineforce\\relatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B27BAC8E-9DB8-4573-AC4C-3223A401F48D}|FelineForce\\FelineForce.csproj|d:\\unesp\\implementa\u00E7\u00E3o sistemas\\erp-relatorio2\\felineforce\\felineforce\\models\\common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -146,7 +146,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -159,18 +159,17 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T02:37:54.056Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Relatorios.cs",
               "DocumentMoniker": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\Relatorios.cs",
               "RelativeDocumentMoniker": "FelineForce\\Relatorios.cs",
               "ToolTip": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\Relatorios.cs",
               "RelativeToolTip": "FelineForce\\Relatorios.cs",
-              "ViewState": "AgIAAOUBAAAAAAAAAAAiwBYCAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAALQAAAAAAAAAAAArwJAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T11:54:09.714Z",
               "IsPinned": true,
@@ -178,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Compra.cs",
               "DocumentMoniker": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\Compra.cs",
               "RelativeDocumentMoniker": "FelineForce\\Compra.cs",
@@ -192,20 +191,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Estoque.cs",
               "DocumentMoniker": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\Estoque.cs",
               "RelativeDocumentMoniker": "FelineForce\\Estoque.cs",
               "ToolTip": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\Estoque.cs",
               "RelativeToolTip": "FelineForce\\Estoque.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAApwDAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwDsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T14:13:04.475Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Estoque.cs [Projeto]",
               "DocumentMoniker": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\Estoque.cs",
               "RelativeDocumentMoniker": "FelineForce\\Estoque.cs",
@@ -217,19 +216,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "CadastraUsuario.cs [Projeto]",
               "DocumentMoniker": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\CadastraUsuario.cs",
               "RelativeDocumentMoniker": "FelineForce\\CadastraUsuario.cs",
               "ToolTip": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\CadastraUsuario.cs [Projeto]",
               "RelativeToolTip": "FelineForce\\CadastraUsuario.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T14:10:20.553Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2024-11-26T14:10:20.553Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "IEstoqueService.cs",
               "DocumentMoniker": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\Services\\Interfaces\\IEstoqueService.cs",
               "RelativeDocumentMoniker": "FelineForce\\Services\\Interfaces\\IEstoqueService.cs",
@@ -237,12 +235,11 @@
               "RelativeToolTip": "FelineForce\\Services\\Interfaces\\IEstoqueService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T13:31:19.4Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T13:31:19.4Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ItemCompra.cs",
               "DocumentMoniker": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\Models\\ItemCompra.cs",
               "RelativeDocumentMoniker": "FelineForce\\Models\\ItemCompra.cs",
@@ -250,12 +247,11 @@
               "RelativeToolTip": "FelineForce\\Models\\ItemCompra.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T13:30:12.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T13:30:12.006Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Compra.cs",
               "DocumentMoniker": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\Models\\Compra.cs",
               "RelativeDocumentMoniker": "FelineForce\\Models\\Compra.cs",
@@ -263,12 +259,11 @@
               "RelativeToolTip": "FelineForce\\Models\\Compra.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T13:09:05.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T13:09:05.578Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Compra.Designer.cs",
               "DocumentMoniker": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\Compra.Designer.cs",
               "RelativeDocumentMoniker": "FelineForce\\Compra.Designer.cs",
@@ -276,20 +271,18 @@
               "RelativeToolTip": "FelineForce\\Compra.Designer.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAAAgwFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T13:01:55.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T13:01:55.543Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Compra.cs [Projeto]",
               "DocumentMoniker": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\Compra.cs",
               "RelativeDocumentMoniker": "FelineForce\\Compra.cs",
               "ToolTip": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\Compra.cs [Projeto]",
               "RelativeToolTip": "FelineForce\\Compra.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:58:42.16Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2024-11-26T12:58:42.16Z"
             },
             {
               "$type": "Document",
@@ -301,12 +294,11 @@
               "RelativeToolTip": "FelineForce\\Repository\\GenericRepository.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAWwEUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:47:35.443Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T12:47:35.443Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ItemVenda.cs",
               "DocumentMoniker": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\Models\\ItemVenda.cs",
               "RelativeDocumentMoniker": "FelineForce\\Models\\ItemVenda.cs",
@@ -314,8 +306,7 @@
               "RelativeToolTip": "FelineForce\\Models\\ItemVenda.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:31:01.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T12:31:01.707Z"
             },
             {
               "$type": "Document",
@@ -327,8 +318,7 @@
               "RelativeToolTip": "FelineForce\\Venda.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAD4v1IAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:25:50.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T12:25:50.476Z"
             },
             {
               "$type": "Document",
@@ -340,12 +330,11 @@
               "RelativeToolTip": "FelineForce\\Pagamento.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAWwDUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:25:31.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T12:25:31.745Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "EstoqueService.cs",
               "DocumentMoniker": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\Services\\EstoqueService.cs",
               "RelativeDocumentMoniker": "FelineForce\\Services\\EstoqueService.cs",
@@ -353,8 +342,7 @@
               "RelativeToolTip": "FelineForce\\Services\\EstoqueService.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAowCwAAAB7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:19:33.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T12:19:33.092Z"
             },
             {
               "$type": "Document",
@@ -366,8 +354,7 @@
               "RelativeToolTip": "FelineForce\\Models\\Common.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:18:06.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T12:18:06.412Z"
             },
             {
               "$type": "Document",
@@ -379,8 +366,7 @@
               "RelativeToolTip": "FelineForce\\Models\\Produto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:17:56.529Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T12:17:56.529Z"
             },
             {
               "$type": "Document",
@@ -392,8 +378,7 @@
               "RelativeToolTip": "FelineForce\\Models\\Venda.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:17:43.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T12:17:43.674Z"
             },
             {
               "$type": "Document",
@@ -405,8 +390,7 @@
               "RelativeToolTip": "FelineForce\\Repository\\LogRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:07:36.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T12:07:36.487Z"
             },
             {
               "$type": "Document",
@@ -418,8 +402,7 @@
               "RelativeToolTip": "FelineForce\\Repository\\Interfaces\\ILogRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:06:29.508Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T12:06:29.508Z"
             },
             {
               "$type": "Document",
@@ -431,8 +414,7 @@
               "RelativeToolTip": "FelineForce\\Services\\Interfaces\\ILogService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:04:17.206Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T12:04:17.206Z"
             },
             {
               "$type": "Document",
@@ -449,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "AreaAdm.cs",
               "DocumentMoniker": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\AreaAdm.cs",
               "RelativeDocumentMoniker": "FelineForce\\AreaAdm.cs",
@@ -457,8 +439,7 @@
               "RelativeToolTip": "FelineForce\\AreaAdm.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAIA6wDAAAABuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:03:04.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T12:03:04.35Z"
             },
             {
               "$type": "Document",
@@ -470,12 +451,11 @@
               "RelativeToolTip": "FelineForce\\Services\\LogService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:00:29.2Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T12:00:29.2Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 1,
               "Title": "Relatorios.cs [Projeto]",
               "DocumentMoniker": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\Relatorios.cs",
               "RelativeDocumentMoniker": "FelineForce\\Relatorios.cs",
@@ -518,12 +498,11 @@
               "ToolTip": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\Form1.cs [Projeto]",
               "RelativeToolTip": "FelineForce\\Form1.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T04:00:12.701Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2024-11-26T04:00:12.701Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "VendaService.cs",
               "DocumentMoniker": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\Services\\VendaService.cs",
               "RelativeDocumentMoniker": "FelineForce\\Services\\VendaService.cs",
@@ -531,12 +510,11 @@
               "RelativeToolTip": "FelineForce\\Services\\VendaService.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAhwCkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:17:01.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T12:17:01.524Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "CadastraUsuario.cs",
               "DocumentMoniker": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\CadastraUsuario.cs",
               "RelativeDocumentMoniker": "FelineForce\\CadastraUsuario.cs",
@@ -544,8 +522,7 @@
               "RelativeToolTip": "FelineForce\\CadastraUsuario.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAADAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T02:37:22.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T02:37:22.616Z"
             },
             {
               "$type": "Document",
@@ -561,7 +538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Usuarios.cs",
               "DocumentMoniker": "D:\\UNESP\\Implementa\u00E7\u00E3o sistemas\\ERP-Relatorio2\\FelineForce\\FelineForce\\Usuarios.cs",
               "RelativeDocumentMoniker": "FelineForce\\Usuarios.cs",
@@ -582,8 +559,7 @@
               "RelativeToolTip": "FelineForce\\Clientes.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAD4vxMAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T02:36:41.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T02:36:41.525Z"
             }
           ]
         }

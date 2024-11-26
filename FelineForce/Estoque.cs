@@ -57,7 +57,7 @@ namespace ERP_com_relatorio
                 // Preenche o DataGridView com os dados de produtos
                 foreach (var produto in produtos)
                 {
-                    grdClientes.Rows.Add(produto.Nome, produto.Preco, produto.Quantidade);
+                    grdClientes.Rows.Add(produto.Id, produto.Nome, produto.Preco, produto.Quantidade);
                 }
             }
             catch (Exception ex)

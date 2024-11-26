@@ -153,7 +153,8 @@ namespace ERP_com_relatorio
             else if (cmbFiltro.SelectedItem.ToString() == "Relatório de Compras")
             {
                 grdRelatorios.Columns.Add("DataCompra", "Data da Compra");
-                grdRelatorios.Columns.Add("Fornecedor", "Fornecedor");
+                grdRelatorios.Columns.Add("Quantidade", "Quantidade");
+                grdRelatorios.Columns.Add("Produto", "Produto");
                 grdRelatorios.Columns.Add("TotalGasto", "Total Gasto");
                 grdRelatorios.Columns.Add("Fornecedor", "Fornecedor");
             }
@@ -319,6 +320,7 @@ namespace ERP_com_relatorio
                 .Select(c => new
                 {
                     DataCompra = c.Inclusao,
+                    Produto = c.Nome,
                     Quantidade = c.Quantidade,
                     TotalGasto = c.Preco,
                     Fornecedor = c.Fornecedor
@@ -329,7 +331,7 @@ namespace ERP_com_relatorio
             grdRelatorios.Rows.Clear();
             foreach (var compra in comprasFiltradas)
             {
-                grdRelatorios.Rows.Add(compra.DataCompra, compra.Quantidade, compra.TotalGasto, compra.Fornecedor);
+                grdRelatorios.Rows.Add(compra.DataCompra,compra.Produto, compra.Quantidade, compra.TotalGasto, compra.Fornecedor);
             }
 
             if (!comprasFiltradas.Any())
@@ -411,7 +413,7 @@ namespace ERP_com_relatorio
                         using (var writer = new StreamWriter(saveCsvDialog.FileName))
                         {
                             // Cabeçalhos
-                            writer.WriteLine("Data da Compra,Fornecedor,Total Gasto,Fornecedor");
+                            writer.WriteLine("Data da Compra,Produto, Quantidade,Total Gasto,Fornecedor");
 
                             // Linhas de dados
                             foreach (DataGridViewRow row in grdRelatorios.Rows)
