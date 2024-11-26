@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FelineForce")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0d868b8bacec3fa97e7224fbf4989b5c9673b92")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4671b526973b465528ae5ac9e0f2071daef910fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("FelineForce")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FelineForce")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

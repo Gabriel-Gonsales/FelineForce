@@ -5,6 +5,7 @@ using FelineForce.Services.Interfaces;
 using System.Data;
 using System.Globalization;
 using System.Windows.Forms.DataVisualization.Charting;
+using System.Xml.Linq;
 
 namespace ERP_com_relatorio
 {
@@ -496,6 +497,62 @@ namespace ERP_com_relatorio
                 }
                 if (cmbFiltro.SelectedItem?.ToString() == "Relatório de Vendas")
                 {
+                    // Salvar o XML da nota fiscal
+                    SaveFileDialog saveXmlDialog = new SaveFileDialog
+                    {
+                        Filter = "XML File (*.xml)|*.xml",
+                        Title = "Salvar Nota Fiscal"
+                    };
+
+                    if (saveXmlDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        // Obtém o intervalo de datas
+                        DateTime dataInicio = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1); // Primeiro dia do mês atual
+                        DateTime dataFim = dteFim.Value.Date.AddDays(1).AddSeconds(-1); // Final do dia escolhido
+
+                        // Carrega as vendas do serviço
+                        var vendas = await _vendaService.ObterTodosVendas();
+
+                        // Filtra as vendas pelo intervalo
+                        var vendasFiltradas = vendas
+                            .Where(v => v.Inclusao >= dataInicio && v.Inclusao <= dataFim)
+                            .ToList();
+
+                        if (!vendasFiltradas.Any())
+                        {
+                            MessageBox.Show("Nenhuma venda encontrada no período selecionado.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            return;
+                        }
+
+                        // Criação do XML
+                        XDocument xmlNotaFiscal = new XDocument(
+                            new XElement("NotaFiscal",
+                                new XElement("Emitente",
+                                    new XElement("CNPJ", "00.000.000/0001-00"),
+                                    new XElement("RazaoSocial", "FelineForce LTDA"),
+                                    new XElement("Endereco", "Rua Unesp, 123, Bairro, Bauru, São Paulo")
+                                ),
+                                new XElement("Itens",
+                                    from venda in vendasFiltradas
+                                    select new XElement("Item",
+                                        new XElement("CPF_Cliente", venda.CPFCliente ?? "Não consta"),
+                                        new XElement("Quantidade", venda.Itens.First().Quantidade),
+                                        new XElement("ValorUnitario", Math.Round(venda.Itens.First().Total / venda.Itens.First().Quantidade,2)),
+                                        new XElement("TotalItem", Math.Round(venda.TotalCompra,2))
+                                    )
+                                ),
+                                new XElement("Totais",
+                                    new XElement("ValorTotal", vendasFiltradas.Sum(v => v.TotalCompra)),
+                                    new XElement("Impostos", 0) // Para simulação, o imposto é zero
+                                ),
+                                new XElement("DataEmissao", DateTime.Now.ToString("yyyy-MM-dd"))
+                            )
+                        );
+
+                        // Salvar o XML no arquivo selecionado
+                        xmlNotaFiscal.Save(saveXmlDialog.FileName);
+                        MessageBox.Show("Nota fiscal gerada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                     // Salvar o gráfico de faturamento
                     SaveFileDialog saveGraphDialog = new SaveFileDialog
                     {
